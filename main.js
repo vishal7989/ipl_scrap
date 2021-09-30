@@ -15,6 +15,9 @@ function cb(err, res, html) {
     let fullLink = "https://www.espncricinfo.com" + link.attr("href");
     // console.log(fullLink);
     request(fullLink, allMatchPageCb);
+    if(err){
+    console.log("Error!!!");
+  }
   }
 }
 
